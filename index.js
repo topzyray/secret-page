@@ -1,4 +1,4 @@
-//The password is ILoveProgramming
+//The password is ILovePoundedYam;
 
 import express from "express";
 import bodyParser from "body-parser";
@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.post("/check", (req, res) => {
     console.log(req.body)
-    if (req.body.password === "ILoveProgramming") {
+    if (req.body.password === "ILovePoundedYam") {
         res.sendFile(__dirname + "/public/secret.html");
     } else {
         res.sendFile(__dirname + "/public/index.html");
@@ -51,7 +51,7 @@ app.listen(port, () => {
 
 // function passwordCheck(req, res, next) {
 //   const password = req.body["password"];
-//   if (password === "ILoveProgramming") {
+//   if (password === "ILovePoundedYam") {
 //     userIsAuthorised = true;
 //   }
 //   next();
